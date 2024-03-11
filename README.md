@@ -1,2 +1,2 @@
-# mmolad.github.io
- Mickey's 2024 Resume
+# Mickey Molad
+Welcome to my resume GitHub repo.
