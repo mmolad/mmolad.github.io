@@ -3,11 +3,46 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="">
+    <title>Mickey Molad - Nice to meet you.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a67cac4333.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<h1>hello world.</h1>
+<h1>Hi, I'm Mickey.</h1>
+<p>My name is <strong class="me">Mickey Molad</strong> and I'm a communications professional doing work in the social media, web marketing, and community management spaces.</p>
+<p>You've probably seen my community management and social media work with the following companies: <strong>Blizzard Entertainment</strong>, <strong>AMD</strong>, <strong>Certain Affinity</strong>, and <strong>cPanel</strong>.</p> 
+<p>In my free time, I help operate several fan communities, including <strong>Overwatch</strong> and <strong>Hearthstone</strong> on Reddit and Discord. I've helped grow these communities from just a few thousand members to millions worldwide, becoming by far the biggest sources of community discussion for these games.</p>
+<p>As part of my web design work, I've also contributed to the subreddit designs of Death Stranding, Corsair, Rocket League, Black Desert Online, Lawbreakers, ArcheAge, RUST, and more. Components of my UX and design work were also directly integrated into the official Reddit Redesign. </p>
+<div id="contact">
+    <ul>
+        <li><strong>Social Media</strong>: <a href="https://www.linkedin.com/in/mickeymolad/"><i class="fa-brands fa-linkedin"></i> LinkedIn </a>, <a href="https://twitter.com/GameWithTurik"><i class="fa-brands fa-square-twitter"></i> Twitter (𝕏)</a></li>
+
+<li><strong>CodePen Portfolio</strong>: <a href="https://codepen.io/mmolad"><i class="fa-brands fa-codepen"></i> codepen.io/mmolad</a></li>
+<li><strong>Resume</strong>: <a href="Mickey Molad - Resume 3.28.2024.pdf">Mickey Molad - Resume 3.28.2024.pdf</a> <a download href="Mickey Molad - Resume 3.28.2024.pdf"><i class="fa-solid fa-download"></i></a></li>
+        <li><strong>Email Me</strong>: <span id="email">Enable Javascript</span><script>document.getElementById("email").textContent = 'm'+'i'+'c'+'k'+'e'+'y'+'m'+'o'+'l'+'a'+'d'+'@'+'g'+'m'+'a'+'i'+'l'+'.'+'c'+'o'+'m';</script></li>
+    </ul>
+    <hr/>
+<code class="subtext">View the source code for this page (and my GitHub): <a href="//github.com/mmolad/mmolad.github.io">//github.com/mmolad/mmolad.github.io</a></code>
+</div>
+    <script>
+        var emailSpan = document.getElementById("email");
+
+        emailSpan.addEventListener("mouseover", function() {
+            // Only change if it's still a span
+            if (this.tagName.toLowerCase() === "span") {
+                var email = this.textContent; // Get the email from the span
+
+                // Create a new 'a' element
+                var emailLink = document.createElement("a");
+                emailLink.className = "email"; // Maintain any styling
+                emailLink.textContent = email; // Set the email text
+                emailLink.href = "mailto:" + email; // Set mailto link
+
+                // Replace the span with the new 'a' element
+                this.parentNode.replaceChild(emailLink, this);
+            }
+        });
+    </script>
 </body>
 </html>
