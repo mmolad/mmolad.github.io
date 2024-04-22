@@ -48,6 +48,30 @@ hr {
 	margin: 4em 0;
 }
 
+.hint {
+	text-align: center;
+	font-size: .85em;
+	font-style: italic;
+}
+
+.hint::before {
+	content: "↳ ";
+}
+
+a:target {
+	animation: attention 4s;
+}
+
+@keyframes attention {
+	10%, 20% {
+		background-color: rgba(60,179,113,.5);
+	}
+
+	0%, 15%,100% {
+		background-color: rgba(60,179,113,0);
+	}
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 	body {
